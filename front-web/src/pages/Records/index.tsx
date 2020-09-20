@@ -12,7 +12,7 @@ const Records = () => {
     const [ recordsResponse, setRecordsResponse ] = useState<RecordsResponse>();
     const [activePage, setActivePage] = useState(0);
 
-    const BASE_URL = 'http://localhost:8080';
+    const BASE_URL = 'https://sds1-ademir.herokuapp.com';
 
     useEffect(() => {
         axios.get(`${BASE_URL}/records?linesPerPage=12&page=${activePage}`)
